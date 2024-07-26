@@ -16,9 +16,29 @@ Esta é uma aplicação básica desenvolvida em Python utilizando Flask e SQLite
    git clone <URL_DO_REPOSITORIO>
    cd <NOME_DO_REPOSITORIO>
   
-2. **Clone o repositório:**
+2. **Instale as dependências:**
 
    ```bash
    pip install Flask
 
   
+## Executando a Aplicação
+
+1. **Inicie o servidor Flask:**
+
+   ```bash
+   python main.py
+
+## Uso
+
+   ```bash
+   http://127.0.0.1:5000/random-word
+   ```
+
+**A resposta será:**
+   ```bash
+   {
+    "word": "amor"
+   }
+   ```
+   
