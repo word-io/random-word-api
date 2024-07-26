@@ -2,6 +2,8 @@ from flask import Flask, jsonify
 import sqlite3
 import random
 
+from flask_cors import CORS
+
 DATABASE = 'palavras.db'
 
 class DatabaseConnection:
@@ -36,6 +38,7 @@ class PalavraService:
         return random.choice(palavras) if palavras else None
 
 app = Flask(__name__)
+cors = CORS(app)
 db_connection = DatabaseConnection(DATABASE)
 repository = PalavraRepository(db_connection)
 service = PalavraService(repository)
