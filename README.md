@@ -38,7 +38,7 @@ Esta é uma aplicação básica desenvolvida em Python utilizando Flask e SQLite
 **A resposta será:**
    ```bash
    {
-    "word": "amor"
+    "word": "letra"
    }
    ```
    
